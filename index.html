@@ -1,4 +1,689 @@
-<html>
-  <body style="background-color:blue;">
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deepa | Senior DevOps &amp; Site Reliability Engineer</title>
+<meta name="description" content="Deepa — Senior DevOps Engineer &amp; SRE specializing in Kubernetes, Terraform, Azure DevOps and platform reliability. 5+ years building cloud-native infrastructure." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#home" class="brand">
+      <span class="brand-dot" aria-hidden="true"></span>
+      deepa<span class="brand-accent">@</span><span id="roleType" class="brand-role">sre</span><span class="brand-cursor">_</span>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">about</a>
+      <a href="#stack">stack</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#certs">certs</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow mono">// production incident channel — all clear</p>
+        <h1 class="hero-title">
+          Deepa
+        </h1>
+        <p class="hero-role">Senior DevOps Engineer &amp; Site Reliability Engineer</p>
+        <p class="hero-desc">
+          I keep cloud-native platforms up, fast, and boring in the best way.
+          Five-plus years designing Kubernetes &amp; Terraform infrastructure on Azure,
+          shipping DevSecOps pipelines, and turning 3am pages into runbooks nobody
+          needs to read twice.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#experience" class="btn btn-ghost">See the work</a>
+        </div>
+        <p class="hero-location mono">📍 Bangalore, India</p>
+      </div>
+
+      <div class="hero-panel" aria-label="Live status panel (illustrative)">
+        <div class="panel-head">
+          <div class="panel-dots"><span></span><span></span><span></span></div>
+          <span class="mono panel-title">status.sh — deepa-platform</span>
+        </div>
+        <div class="panel-body mono">
+          <p class="panel-line"><span class="prompt">$</span> ./check-platform-health.sh</p>
+          <ul class="check-list" id="checkList">
+            <li data-delay="0"><span class="dot"></span>aks-cluster-prod ............ <b>OK</b></li>
+            <li data-delay="1"><span class="dot"></span>cicd-pipelines (52 svc) ...... <b>OK</b></li>
+            <li data-delay="2"><span class="dot"></span>observability-stack ......... <b>OK</b></li>
+            <li data-delay="3"><span class="dot"></span>db-auth (entra-id, 280+) .... <b>OK</b></li>
+            <li data-delay="4"><span class="dot"></span>black-friday-readiness ....... <b>OK</b></li>
+          </ul>
+          <p class="panel-line result">all systems nominal. <span class="blink">▍</span></p>
+        </div>
+        <div class="panel-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="99.99">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">uptime through peak traffic</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="40">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">infra cost reduced</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="35">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">fewer prod incidents</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="60">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">MTTR reduction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow mono">01 · about</p>
+      <h2 class="section-title">Reliability is a feature I ship.</h2>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="about-lead">
+            I turn fragile infrastructure into <span class="hl">boring, predictable systems</span> —
+            the kind where "it just works" isn't luck, it's engineering.
+          </p>
+          <p class="about-text">
+            Five-plus years building and operating cloud-native platforms on Microsoft Azure and
+            across multi-cloud environments, sitting at the intersection of automation, security,
+            and observability — the parts of a system that decide whether an incident is a blip
+            or a bad week.
+          </p>
+          <p class="about-text">
+            At IBM, I've led zero-downtime platform migrations, built the CI/CD pipelines dozens of
+            teams ship through daily, and stood up the monitoring that lets us sleep through
+            Black Friday instead of watching dashboards.
+          </p>
+
+          <div class="pillars">
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path></svg>
+              </span>
+              <h4>Automate</h4>
+              <p>Terraform &amp; Kubernetes pipelines that replace manual, error-prone ops.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              </span>
+              <h4>Observe</h4>
+              <p>Azure Monitor, Grafana &amp; Datadog set up so incidents get caught before users notice.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3.5v5.5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V5.5L12 2z"></path><path d="M9 12l2 2 4-4"></path></svg>
+              </span>
+              <h4>Secure</h4>
+              <p>Entra ID, RBAC &amp; Key Vault baked into the platform, not bolted on afterward.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h3 class="mono about-card-title">quick facts</h3>
+          <ul class="about-facts">
+            <li><span>Role</span><b>DevOps Engineer, IBM India</b></li>
+            <li><span>Focus</span><b>Kubernetes · Terraform · Azure DevOps</b></li>
+            <li><span>Experience</span><b>5+ years</b></li>
+            <li><span>Based in</span><b>Bangalore, India</b></li>
+            <li><span>Education</span><b>B.E., Computer Science</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK / SKILLS -->
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <p class="eyebrow mono">02 · stack</p>
+      <h2 class="section-title">The toolbelt.</h2>
+      <div class="stack-grid">
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-cloud" style="font-size: 1.4em;"></i></span>Cloud & Platforms</h3>
+          <div class="tags">
+            <span><i class="devicon-azure-plain colored tag-icon"></i>Microsoft Azure</span>
+            <span><i class="devicon-amazonwebservices-plain-wordmark colored tag-icon"></i>AWS</span>
+            <span><i class="devicon-googlecloud-plain colored tag-icon"></i>GCP</span>
+            <span><i class="ti ti-cloud" style="color: var(--accent-blue);"></i>IBM Cloud</span>
+            <span><i class="devicon-oracle-original colored tag-icon"></i>OCI</span>
+            <span><i class="ti ti-server" style="color: var(--accent-blue);"></i>Virtual Machines</span>
+            <span><i class="devicon-azure-plain colored tag-icon"></i>Azure Kubernetes Service (AKS)</span>
+            <span><i class="devicon-kubernetes-plain colored tag-icon"></i>IKS</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-box" style="font-size: 1.4em;"></i></span>Containers & Orchestration</h3>
+          <div class="tags">
+            <span><i class="devicon-kubernetes-plain colored tag-icon"></i>Kubernetes</span>
+            <span><i class="devicon-docker-plain colored tag-icon"></i>Docker</span>
+            <span><i class="devicon-helm-original colored tag-icon" style="color: var(--accent-blue);"></i>Helm</span>
+            <span><i class="ti ti-package" style="color: #f87171;"></i>Container Registry</span>
+            <span><i class="ti ti-cube-unfolded" style="color: var(--accent);"></i>ACR</span>
+            <span><i class="ti ti-cylinder" style="color: var(--accent-blue);"></i>ICR</span>
+            <span><i class="ti ti-arrows-maximize" style="color: var(--accent-amber);"></i>Autoscaling</span>
+            <span><i class="ti ti-apps" style="color: var(--accent-blue);"></i>Microservices</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-code" style="font-size: 1.4em;"></i></span>Infrastructure as Code & CI/CD</h3>
+          <div class="tags">
+            <span><i class="devicon-terraform-plain colored tag-icon"></i>Terraform</span>
+            <span><i class="devicon-azuredevops-plain colored tag-icon"></i>Azure DevOps</span>
+            <span><i class="devicon-jenkins-line colored tag-icon"></i>Jenkins</span>
+            <span><i class="devicon-git-plain colored tag-icon"></i>Git</span>
+            <span><i class="devicon-github-original tag-icon"></i>GitHub</span>
+            <span><i class="devicon-yaml-plain colored tag-icon"></i>YAML</span>
+            <span><i class="devicon-ansible-plain tag-icon" style="color: red;"></i>Ansible</span>
+            <span><i class="ti ti-codeblock" style="color: var(--accent-blue);"></i>ARM Templates</span>
+            <span><i class="ti ti-file-code" style="color: var(--accent-amber);"></i>Pipeline as Code</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-terminal-2" style="font-size: 1.4em;"></i></span>Programming & Automation</h3>
+          <div class="tags">
+            <span><i class="devicon-python-plain colored tag-icon"></i>Python</span>
+            <span><i class="devicon-bash-plain tag-icon" style="color: var(--accent);"></i>Bash</span>
+            <span><i class="devicon-linux-plain tag-icon" style="color: var(--accent-amber);"></i>Linux</span>
+            <span><i class="devicon-powershell-plain tag-icon" style="color: var(--text-dim);"></i>PowerShell</span>
+            <span><i class="ti ti-api" style="color: var(--accent-blue);"></i>REST APIs</span>
+            <span><i class="ti ti-plug" style="color: var(--accent-blue);"></i>OpenAPI</span>
+            <span><i class="ti ti-plug" style="color: var(--accent-blue);"></i>Swagger</span>
+            <span><i class="ti ti-code" style="color: var(--accent-amber);"></i>Postman</span>
+            <span><i class="ti ti-bolt" style="color: var(--accent-amber);"></i>Azure Logic Apps</span>
+            <span><i class="devicon-csharp-plain colored tag-icon"></i>C#</span>
+            <span><i class="devicon-dotnetcore-plain colored tag-icon"></i>.NET Core</span>
+            <span><i class="ti ti-script-plus" style="color: var(--accent);"></i>Scripting</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-activity-heartbeat" style="font-size: 1.4em;"></i></span>Monitoring & Observability</h3>
+          <div class="tags">
+            <span><i class="ti ti-chart-line" style="color: var(--accent-blue);"></i>Azure Monitor</span>
+            <span><i class="ti ti-chart-dots" style="color: var(--accent-blue);"></i>Application Insights</span>
+            <span><i class="ti ti-file-analytics" style="color: var(--accent-blue);"></i>Log Analytics</span>
+            <span><i class="devicon-grafana-plain colored tag-icon"></i>Grafana</span>
+            <span><i class="devicon-datadog-original colored tag-icon"></i>Datadog</span>
+            <span><i class="devicon-prometheus-original colored tag-icon"></i>Prometheus</span>
+            <span><i class="devicon-kibana-plain colored tag-icon"></i>Kibana</span>
+            <span><i class="ti ti-dashboard" style="color: var(--accent-amber);"></i>Instana</span>
+            <span><i class="ti ti-layout-dashboard" style="color: var(--accent);"></i>Dashboards</span>
+            <span><i class="ti ti-bell-ringing" style="color: var(--accent-amber);"></i>Real-time Alerts</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-heart-rate-monitor" style="font-size: 1.4em;"></i></span>SRE & Reliability</h3>
+          <div class="tags">
+            <span><i class="ti ti-heart" style="color: red"></i>Reliability</span>
+            <span><i class="ti ti-shield-check" style="color: var(--accent);"></i>Availability</span>
+            <span><i class="ti ti-chart-arcs" style="color: var(--accent-blue);"></i>SLI / SLO / SLA</span>
+            <span><i class="ti ti-alert-triangle" style="color: var(--accent-amber);"></i>Error Budgets</span>
+            <span><i class="ti ti-search" style="color: var(--accent);"></i>RCA</span>
+            <span><i class="ti ti-chart-histogram" style="color: var(--accent-blue);"></i>Capacity Planning</span>
+            <span><i class="ti ti-clock" style="color: var(--accent-amber);"></i>Cron Jobs</span>
+            <span><i class="ti ti-clock-24" style="color: var(--accent);"></i>24*7 Production Support</span>
+            <span><i class="ti ti-calendar-time" style="color: red"></i>Job Scheduling</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-shield-lock" style="font-size: 1.4em;"></i></span>Security & Identity</h3>
+          <div class="tags">
+            <span><i class="ti ti-id-badge" style="color: var(--accent-blue);"></i>Microsoft Entra ID</span>
+            <span><i class="ti ti-user-shield" style="color: var(--accent-blue);"></i>Managed Identity</span>
+            <span><i class="ti ti-key" style="color: var(--accent-amber);"></i>Azure Key Vault</span>
+            <span><i class="ti ti-lock-access" style="color: var(--accent);"></i>RBAC</span>
+            <span><i class="ti ti-shield" style="color: var(--accent);"></i>IAM</span>
+            <span><i class="ti ti-bug" style="color: red"></i>Twistlock</span>
+            <span><i class="ti ti-scan" style="color: var(--accent-amber);"></i>Vulnerability Scanning</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-database" style="font-size: 1.4em;"></i></span>Databases & Messaging</h3>
+          <div class="tags">
+            <span><i class="devicon-apachekafka-original"></i>Kafka</span>
+            <span><i class="ti ti-bolt" style="color: var(--accent-amber);"></i>Azure Event Hubs</span>
+            <span><i class="devicon-redis-plain colored tag-icon"></i>Redis</span>
+            <span><i class="devicon-mysql-plain colored tag-icon"></i>MySQL</span>
+            <span><i class="devicon-postgresql-plain colored tag-icon"></i>PostgreSQL</span>
+            <span><i class="devicon-mongodb-plain colored tag-icon"></i>MongoDB</span>
+            <span><i class="ti ti-database" style="color: var(--accent-blue);"></i>Azure Storage</span>
+            <span><i class="ti ti-stack" style="color: var(--accent-amber);"></i>Databricks</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <h3><span class="cat-icon"><i class="ti ti-stars" style="font-size: 1.4em;"></i></span>Other DevOps Essentials</h3>
+          <div class="tags">
+            <span><i class="ti ti-git-branch" style="color: var(--accent-amber);"></i>Version Control</span>
+            <span><i class="ti ti-git-merge" style="color: var(--accent-amber);"></i>Branch Strategy</span>
+            <span><i class="ti ti-cloud-code" style="color: var(--accent);"></i>Infrastructure as Code</span>
+            <span><i class="ti ti-api-app" style="color: var(--accent-blue);"></i>APIM</span>
+            <span><i class="ti ti-device-desktop-code" style="color: var(--accent);"></i>Dashboards</span>
+            <span><i class="ti ti-chart-line" style="color: var(--accent-blue);"></i>Monitoring</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow mono">03 · experience</p>
+      <h2 class="section-title">Where the work happened.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date mono">Oct 2021 — Present</span>
+            <span class="timeline-active mono"><span class="timeline-active-dot"></span>active</span>
+          </div>
+          <div class="timeline-content">
+            <h3>DevOps Engineer</h3>
+            <p class="timeline-org">IBM India Pvt Ltd</p>
+            <ul class="timeline-list">
+              <li>Led a zero-downtime migration of <b>10+ microservices</b> from ARO to AKS using Terraform, Helm, and Azure DevOps — cutting infrastructure costs by <b>40%</b> while raising scalability and deployment consistency.</li>
+              <li>Architected CI/CD and DevSecOps pipelines for <b>52+ microservices</b> with automated rollbacks and integrated vulnerability scanning, lifting deployment reliability by <b>25%</b>.</li>
+              <li>Built enterprise observability with Azure Monitor, Datadog, Grafana, and <b>100+</b> Terraform-managed alerts — cutting production incidents by <b>35%</b> while holding <b>99.99% uptime</b> across five Black Friday events and <b>65%+</b> traffic spikes.</li>
+              <li>Modernized authentication for <b>280+</b> MySQL &amp; PostgreSQL databases, replacing password-based access with Microsoft Entra ID, RBAC, and managed PGP/SFTP keys — and secured Azure Databricks along the way.</li>
+              <li>Anchored 24×7 production support as core SRE: incident response, root-cause analysis, release management, capacity planning, and <b>20+</b> operational runbooks that outlived the incidents that inspired them.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / PLATFORM INITIATIVES -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow mono">04 · platform initiatives</p>
+      <h2 class="section-title">Things I built to stop firefighting.</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.6V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1-1.6 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.6-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.6-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.9.3H9a1.7 1.7 0 001-1.6V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.6 1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.9V9a1.7 1.7 0 001.6 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.6 1z"></path></svg>
+            </div>
+            <h3>Payload Provisioning Platform</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">Azure Logic Apps</span>
+              <span class="project-tag mono">Log Analytics</span>
+              <span class="project-tag mono">Azure DevOps</span>
+              <span class="project-tag mono">MS Teams Adaptive Cards</span>
+            </div>
+          </div>
+          <p>
+            Built a self-service tool that lets team members fetch system payloads on-demand through MS Teams — no ticket, no wait, no ops person in the loop.
+          </p>
+          <ul class="project-results">
+            <li><b>-35%</b> fewer support tickets raised</li>
+            <li><b>+27%</b> faster time-to-resolution for data requests</li>
+            <li>Freed support engineers from routine fetch tasks entirely</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.5.4l2-2a5 5 0 00-7-7l-1.2 1.1"></path><path d="M14 11a5 5 0 00-7.5-.4l-2 2a5 5 0 007 7l1.1-1.1"></path></svg>
+            </div>
+            <h3>Infrastructure Cost & Compliance</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">GitHub</span>
+              <span class="project-tag mono">Azure DevOps</span>
+              <span class="project-tag mono">Docker</span>
+              <span class="project-tag mono">ICA Watson</span>
+            </div>
+          </div>
+          <p>
+            Introduced business-hours scheduling to automatically start and stop non-production clusters & servers, and wired in automated Dockerfile remediation triggered by security scan reports.
+          </p>
+          <ul class="project-results">
+            <li><b>-17%</b> reduction in total infrastructure spend</li>
+            <li><b>-70%</b> manual intervention for Dockerfile remediation</li>
+            <li>Zero manual shutdowns needed across non-prod environments</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M2 12h4M18 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Automated Cluster Maintenance</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">Azure Kubernetes Service (AKS)</span>
+              <span class="project-tag mono">Azure Pipelines</span>
+            </div>
+          </div>
+          <p>
+            Engineered a closed-loop automation to scale services, perform database backups, execute cluster patching, and conduct post-patch health checks without human intervention.
+          </p>
+          <ul class="project-results">
+            <li><b>0</b> manual steps across every patching cycle</li>
+            <li>Post-patch health checks run automatically on every node</li>
+            <li>Maintenance windows shrunk from hours of toil to a scheduled pipeline run</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14M5 12h14M5 19h14"/></svg>
+            </div>
+            <h3>Identity &amp; Access Governance</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">Microsoft Entra ID (Azure AD)</span>
+              <span class="project-tag mono">Azure Key Vault</span>
+            </div>
+          </div>
+          <p>
+            Eliminated shared database credentials across <b>280+ MySQL and PostgreSQL databases</b> by migrating to Entra ID-backed RBAC and individual managed identities.
+          </p>
+          <ul class="project-results">
+            <li><b>280+</b> databases migrated to zero-shared-credential access</li>
+            <li><b>100%</b> elimination of password-based logins</li>
+            <li>Full audit trail per user — no more "who changed what" mysteries</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14M5 12h14M5 19h14"/></svg>
+            </div>
+            <h3>Consumer Service Lifecycle Automation</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">Azure Logic Apps</span>
+              <span class="project-tag mono">Azure Pipelines</span>
+              <span class="project-tag mono">Azure Functions</span>
+              <span class="project-tag mono">MS Teams</span>
+            </div>
+          </div>
+          <p>
+            Built a maintenance-aware orchestration layer that detects scheduled downtime windows and automatically pauses, waits, then resumes microservices — with health checks confirming safe restart.
+          </p>
+          <ul class="project-results">
+            <li><b>0</b> engineers needed on-call during weekend maintenance windows</li>
+            <li>Health checks fire automatically post-resume — no manual verification</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7l8 6 8-6"/><path d="M4 14l8 6 8-6"/></svg>
+            </div>
+            <h3>Workflow Sync &amp; Self-Healing</h3>
+          </div>
+          <div class="project-head">
+            <div class="project-tags">
+              <span class="project-tag mono">REST APIs</span>
+              <span class="project-tag mono">Jira</span>
+              <span class="project-tag mono">Kubernetes Cron Jobs</span>
+            </div>
+          </div>
+          <p>
+            Connected project management and engineering boards via a real-time REST API bridge, and implemented a self-healing mechanism that automatically replaces stale pods.
+          </p>
+          <ul class="project-results">
+            <li><b>-99.9%</b> manual effort in ticket creation and synchronization</li>
+            <li><b>65%+ traffic surge</b> capacity managed without stale pod failures</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certs">
+    <div class="section-inner">
+      <p class="eyebrow mono">05 · certifications</p>
+      <h2 class="section-title">Credentials on file.</h2>
+
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-ms mono">MS</span> -->
+          <span class="cert-badge cert-badge-ms mono"><div style="display: inline-flex; align-items: center; gap: 8px;"><svg width="24" height="24" viewBox="0 0 23 23"><path fill="#f35325" d="M1 1h10v10H1z"/><path fill="#81bc06" d="M12 1h10v10H12z"/><path fill="#00a4ef" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg></div></span>
+          <div class="cert-body">
+            <h3>Azure DevOps Engineer Expert (AZ-400)</h3>
+            <p class="cert-issuer" style="font-weight: bold;">Microsoft</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>Aug 2023</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>Aug 2027</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>CI/CD</span><span>Release Mgmt</span><span>IaC</span><span>Monitoring</span>
+            </div>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/DeepaS-2870/8EA6F81A451B1C79?sharingId=C9C11684D9F78890" class="cert-link" target="_blank">View credential →</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-ms mono">MS</span> -->
+          <span class="cert-badge cert-badge-ms mono"><div style="display: inline-flex; align-items: center; gap: 8px;"><svg width="24" height="24" viewBox="0 0 23 23"><path fill="#f35325" d="M1 1h10v10H1z"/><path fill="#81bc06" d="M12 1h10v10H12z"/><path fill="#00a4ef" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg></div></span>
+          <div class="cert-body">
+            <h3>Azure Developer Associate (AZ-204)</h3>
+            <p class="cert-issuer" style="font-weight: bold;">Microsoft</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>Oct 2022</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>Oct 2027</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>Azure Compute</span><span>Storage</span><span>Security</span><span>APIs</span>
+            </div>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/DeepaS-2870/2714C8006FFBEBD0?sharingId=C9C11684D9F78890" class="cert-link">View credential →</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-gc mono">GC</span> -->
+          <span class="cert-badge cert-badge-gc mono"><svg viewBox="0 0 128 128"><path fill="#ea4535" d="M80.6 40.3h.4l-.2-.2 14-14v-.3c-11.8-10.4-28.1-14-43.2-9.5C36.5 20.8 24.9 32.8 20.7 48c.2-.1.5-.2.8-.2 5.2-3.4 11.4-5.4 17.9-5.4 2.2 0 4.3.2 6.4.6.1-.1.2-.1.3-.1 9-9.9 24.2-11.1 34.6-2.6h-.1z"></path><path fill="#557ebf" d="M108.1 47.8c-2.3-8.5-7.1-16.2-13.8-22.1L80 39.9c6 4.9 9.5 12.3 9.3 20v2.5c16.9 0 16.9 25.2 0 25.2H63.9v20h-.1l.1.2h25.4c14.6.1 27.5-9.3 31.8-23.1 4.3-13.8-1-28.8-13-36.9z"></path><path fill="#36a852" d="M39 107.9h26.3V87.7H39c-1.9 0-3.7-.4-5.4-1.1l-15.2 14.6v.2c6 4.3 13.2 6.6 20.7 6.6z"></path><path fill="#f9bc15" d="M40.2 41.9c-14.9.1-28.1 9.3-32.9 22.8-4.8 13.6 0 28.5 11.8 37.3l15.6-14.9c-8.6-3.7-10.6-14.5-4-20.8 6.6-6.4 17.8-4.4 21.7 3.8L68 55.2C61.4 46.9 51.1 42 40.2 42.1z"></path></svg></span>
+          <div class="cert-body">
+            <h3>Cloud Digital Leader</h3>
+            <p class="cert-issuer" style="font-weight: bold;">Google Cloud</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>Jun 2026</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>Jul 2029</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>Cloud Fundamentals</span><span>Data</span><span>Security</span>
+            </div>
+            <a href="https://www.credly.com/badges/de924ffa-476e-4dd7-be1e-955ae64bee0d/public_url" class="cert-link">View credential →</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-oci mono">OCI</span> -->
+          <span class="cert-badge cert-badge-oci mono"><svg viewBox="0 0 128 128"><path fill="#EA1B22" d="M55.387 66.469h8.333l-4.407-7.09-8.088 12.819h-3.681L57.382 56.8a2.324 2.324 0 011.931-.998c.765 0 1.478.363 1.892.972l9.876 15.424H67.4l-1.736-2.865h-8.438l-1.839-2.864zm38.235 2.864V55.958h-3.123v14.685c0 .402.156.791.454 1.089.298.298.7.466 1.141.466h14.244l1.841-2.865H93.622zm-51.677-2.397c3.033 0 5.496-2.449 5.496-5.482s-2.462-5.496-5.496-5.496H28.28v16.241h3.123V58.822h10.335c1.452 0 2.618 1.18 2.618 2.631s-1.167 2.631-2.618 2.631l-8.806-.013 9.324 8.127h4.538l-6.274-5.263h1.425zM9.059 72.198c-4.483 0-8.122-3.629-8.122-8.114s3.638-8.127 8.122-8.127h9.439c4.485 0 8.121 3.643 8.121 8.127s-3.636 8.114-8.121 8.114H9.059zm9.229-2.865a5.25 5.25 0 005.258-5.249 5.262 5.262 0 00-5.258-5.263H9.267a5.262 5.262 0 00-5.256 5.263 5.25 5.25 0 005.256 5.249h9.021zm59.314 2.865c-4.484 0-8.126-3.629-8.126-8.114s3.642-8.127 8.126-8.127h11.212l-1.829 2.864H77.81a5.267 5.267 0 00-5.264 5.263c0 2.903 2.36 5.249 5.264 5.249h11.263l-1.84 2.865h-9.631zm38.197-2.865a5.25 5.25 0 01-5.055-3.824h13.35l1.84-2.864h-15.19a5.266 5.266 0 015.055-3.824h9.163l1.854-2.864h-11.225c-4.484 0-8.126 3.643-8.126 8.127s3.642 8.114 8.126 8.114h9.631l1.841-2.865h-11.264"></path></svg></span>
+          <div class="cert-body">
+            <h3>OCI Foundations Associate</h3>
+            <p class="cert-issuer" style="font-weight: bold;">Oracle Cloud Infrastructure</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>2025</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>2027</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>Core OCI</span><span>Security</span><span>Pricing</span>
+            </div>
+            <a href="#" class="cert-link">View credential →</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-ibm mono">IBM</span> -->
+          <span class="cert-badge cert-badge-ibm mono"><span><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" class="tag-icon" alt="IBM" style="height:18px;width:auto;"></span></span>
+          <div class="cert-body">
+            <h3>Professional SRE</h3>
+            <p class="cert-issuer" style="font-weight: bold;">IBM Cloud</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>Jun 2025</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>Jun 2030</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>SLI/SLO</span><span>Incident Mgmt</span><span>Reliability</span>
+            </div>
+            <a href="https://www.credly.com/badges/aa162aa0-e7f8-4547-91d2-14e717f13070/public_url" class="cert-link">View credential →</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <span class="verified-badge" title="Verified credential" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <!-- <span class="cert-badge cert-badge-ibm mono">IBM</span> -->
+          <span class="cert-badge cert-badge-ibm mono"><span><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" class="tag-icon" alt="IBM" style="height:18px;width:auto;"></span></span>
+          <div class="cert-body">
+            <h3>DevSecOps Essentials</h3>
+            <p class="cert-issuer" style="font-weight: bold;">IBM Cloud</p>
+            <div class="cert-meta">
+              <div class="meta-item">
+                  <i class="ti ti-calendar"></i>
+                  <span>Issued: <strong>Jun 2026</strong></span>
+              </div>
+              <div class="meta-item">
+                  <i class="ti ti-calendar-x"></i>
+                  <span>Expires: <strong>Jul 2031</strong></span>
+              </div>
+            </div>
+            <div class="cert-skills">
+              <span>Vulnerability Scanning</span><span>CI/CD Security</span>
+            </div>
+            <a href="https://www.credly.com/badges/d51a98a8-e4be-4938-a86c-c44a897f8a27/public_url" class="cert-link">View credential →</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow mono">06 · contact</p>
+      <h2 class="section-title">Let's fix something together.</h2>
+      <p class="contact-desc">
+        Open to conversations about DevOps, SRE, and platform engineering roles —
+        or just a good chat about infrastructure that actually holds up.
+      </p>
+      <div class="contact-icons">
+        <a href="mailto:deepu13october@gmail.com" class="contact-icon-btn" aria-label="Send email" title="deepu13october@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/deepu13/" target="_blank" rel="noopener" class="contact-icon-btn" aria-label="LinkedIn profile" title="linkedin.com/in/deepu13">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© <span id="year"></span> Deepa · built for uptime, not just for looks.</p>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
 </html>
